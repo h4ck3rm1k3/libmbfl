@@ -1,0 +1,21 @@
+Source: libmbfl
+Priority: extra
+Maintainer: James Michael DuPont <mdupont@introspector-mail>
+Build-Depends: debhelper (>= 7), autotools-dev
+Standards-Version: 3.8.1
+Section: libs
+Homepage: <insert the upstream URL, if relevant>
+
+Package: libmbfl-dev
+Section: libdevel
+Architecture: any
+Depends: libmbfl (= ${binary:Version})
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: libmbfl
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

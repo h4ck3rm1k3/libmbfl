@@ -1,0 +1,10 @@
+Package: libmbfl
+Version: 0.1-1
+Architecture: i386
+Maintainer: James Michael DuPont <mdupont@introspector-mail>
+Installed-Size: 32
+Section: libs
+Priority: extra
+Homepage: <insert the upstream URL, if relevant>
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

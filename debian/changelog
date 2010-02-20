@@ -1,0 +1,5 @@
+libmbfl (0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- James Michael DuPont <mdupont@introspector-mail>  Sat, 20 Feb 2010 14:31:17 +0100
