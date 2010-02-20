@@ -1,12 +1,13 @@
 
-For UNIX compatible system,
+For DEBIAN / GNU/ Linux  compatible system,
 
-./buildconf
-./configure 
-make
-make install
+dpkg-buildpackage -b
+
+dpkg -i ../libmbfl_0.1-1_i386.deb  ../libmbfl-dev_0.1-1_i386.deb
 
 For Windows,
+FORMAT c: 
 
-Visual C++ 6.0 and Borland C++ 5.0 is suppoted.
+;)
+
 
