@@ -31,6 +31,8 @@ major=2
 # awk '{if (match($$0,/[0-9]+\.[0-9]+\.[0-9]+$$/)) print substr($$0,RSTART)}'`
 #major=`ls src/.libs/lib*.so.* | \
 # awk '{if (match($$0,/\.so\.[0-9]+$$/)) print substr($$0,RSTART+4)}'`
+configure : buildconf 
+	bash  ./buildconf 
 
 config.status: configure
 	dh_testdir
@@ -41,6 +43,8 @@ endif
 ifneq "$(wildcard /usr/share/misc/config.guess)" ""
 	cp -f /usr/share/misc/config.guess config.guess
 endif
+
+
 	./configure $(CROSS) --prefix=/usr --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info CFLAGS="$(CFLAGS)" LDFLAGS="-Wl,-z,defs"
 
 
